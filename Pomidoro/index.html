@@ -1,0 +1,58 @@
+<!--
+// Pomidoro Mobile Application
+// index.html
+//
+// created by @sauliuz
+// PopularOwl Labs // www.popularowl.com
+// Visit www.htmlcenter.com 
+// for more mobile application templates
+-->
+<!DOCTYPE html>
+<html data-ng-app="pomidoroApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="css/ratchet.css">
+    <link rel="stylesheet" href="css/app.css">
+
+  </head>
+  <body>
+
+    <style type="text/css">
+
+      /* Angular.js animated navigation */
+      .slide-enter,
+      .slide-leave
+      {
+        -webkit-transition: 300ms cubic-bezier(0.075, 0.820, 0.165, 1.000) all;
+        -moz-transition: 300ms cubic-bezier(0.075, 0.820, 0.165, 1.000) all;
+        -ms-transition: 300ms cubic-bezier(0.075, 0.820, 0.165, 1.000) all;
+        -o-transition: 300ms cubic-bezier(0.075, 0.820, 0.165, 1.000) all;
+        transition: 300ms cubic-bezier(0.075, 0.820, 0.165, 1.000) all;
+      }
+       
+      .slide-enter {
+        left: 100%;
+      }
+      .slide-enter.slide-enter-active {
+        left: 0px;
+      }
+       
+      .slide-leave {}
+
+      .slide-leave.slide-leave-active{
+      left: -200px;
+      }
+
+    </style>
+
+
+    <!-- placeholder for view markup -->
+    <div ng-view ng-animate="'slide'"></div>
+    
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+</html>
